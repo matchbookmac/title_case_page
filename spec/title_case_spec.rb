@@ -8,4 +8,7 @@ describe('String#title_case') do
   it("will capitalize the first character of a word") do
     expect("path".title_case()).to(eq("Path"))
   end
+  it("will capitalize the first character of each word in a sentence") do
+    expect("little red riding hood".title_case()).to(eq("Little Red Riding Hood"))
+  end
 end
