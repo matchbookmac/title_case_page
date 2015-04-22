@@ -3,7 +3,7 @@ require('title_case')
 
 describe('String#title_case') do
   it("will capitalize a character") do
-    expect("a".title_case()).to(eq("A"))
+    expect("z".title_case()).to(eq("Z"))
   end
   it("will capitalize the first character of a word") do
     expect("path".title_case()).to(eq("Path"))

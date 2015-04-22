@@ -5,6 +5,7 @@ class String
     sentence = self.split(" ")
     sentence.map!() do |word|
       if(dont_capitalize.include?(word))
+        word = word
       else
         word = word.split("")
         word[0].capitalize!()
